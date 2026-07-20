@@ -50,7 +50,7 @@ export default function Index() {
         <motion.div initial={{ scale: 1.08 }} animate={{ scale: 1 }} transition={{ duration: 1.5 }} className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2200&q=90')] bg-cover bg-center opacity-75" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,19,27,.93)_2%,rgba(7,19,27,.70)_50%,rgba(7,19,27,.30)_100%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_82%_28%,rgba(20,184,166,.26),transparent_26%)]" />
-        <div className="relative mx-auto grid min-h-[550px] max-w-7xl items-center gap-12 px-5 pb-16 pt-16 lg:min-h-[400px] lg:grid-cols-[1.2fr_.8fr] lg:px-8">
+        <div className="relative mx-auto grid min-h-[450px] max-w-7xl items-start gap-12 px-5 pb-16 pt-24 sm:pt-28 lg:min-h-[400px] lg:grid-cols-[1.2fr_.8fr] lg:px-8 lg:pt-32">
           <motion.div {...fadeUp}>
             <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold tracking-wide backdrop-blur-md"><Sparkles size={14} className="text-amber-300" /> TRUSTED ENGINEERING & CAD PARTNER</div>
             <h1 className="mt-8 font-display text-5xl font-semibold leading-[1.05] tracking-tight text-white sm:text-7xl">Precision engineering for the <span className="text-teal-400">built environment.</span></h1>
