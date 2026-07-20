@@ -66,7 +66,7 @@ export default function Index() {
 
       </section>
 
-      <section id="about" className="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-32">
+      <section id="about" className="mx-auto max-w-7xl px-5 pt-12 pb-24 sm:py-24 lg:px-8 lg:py-32">
         <div className="grid items-center gap-16 lg:grid-cols-2">
         <motion.div {...fadeUp}><p className="eyebrow">ABOUT NOVABUILD</p><h2 className="section-title mt-4">Built on precision.<br/>Driven by possibility.</h2><p className="body-copy mt-6">NovaBuild excels in providing top-tier engineering and survey drafting solutions, meticulously tailored to the unique demands of every project.</p><p className="body-copy mt-4">We combine deep industry expertise with innovative technology to transform complex CAD challenges into business success.</p><button onClick={() => scrollTo("#process")} className="mt-8 inline-flex items-center text-sm font-bold text-teal-700 hover:text-teal-900">Discover our approach <ArrowRight className="ml-2" size={16}/></button></motion.div>
         <motion.div {...fadeUp} transition={{ duration: .8 }} className="relative"><img className="h-[440px] w-full rounded-[2rem] object-cover shadow-2xl shadow-slate-300/60" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85" alt="Modern NovaBuild project studio"/><div className="absolute -bottom-6 -left-3 rounded-2xl bg-white p-5 shadow-xl sm:-left-7"><div className="flex items-center gap-4"><span className="grid h-11 w-11 place-items-center rounded-xl bg-teal-50 text-teal-700"><HardHat size={23}/></span><div><strong className="text-2xl">15+ years</strong><p className="text-xs text-slate-500">of trusted delivery</p></div></div></div></motion.div>
