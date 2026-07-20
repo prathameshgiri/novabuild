@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { --background: 210 40% 98%; --foreground: 222 47% 11%; --card: 0 0% 100%; --card-foreground: 222 47% 11%; --popover: 0 0% 100%; --popover-foreground: 222 47% 11%; --primary: 174 84% 27%; --primary-foreground: 0 0% 100%; --secondary: 174 72% 40%; --secondary-foreground: 0 0% 100%; --muted: 210 40% 96%; --muted-foreground: 215 16% 47%; --accent: 38 92% 50%; --accent-foreground: 222 47% 11%; --destructive: 0 84% 60%; --destructive-foreground: 0 0% 100%; --border: 214 32% 91%; --input: 214 32% 91%; --ring: 174 84% 27%; --radius: 0.85rem; }
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-background text-foreground antialiased; font-family: Inter, sans-serif; }
+  button, input, textarea, select { font: inherit; }
+}
+
+@layer components {
+  .font-display { font-family: Poppins, sans-serif; }
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[0.18em] text-teal-700; }
+  .section-title { @apply font-display text-4xl font-semibold leading-[1.13] tracking-[-0.04em] text-slate-900 sm:text-5xl; }
+  .body-copy { @apply text-base leading-7 text-slate-500; }
+  .field { @apply block text-xs font-bold uppercase tracking-wider text-slate-500; }
+  .field input, .field select, .field textarea { @apply mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium normal-case tracking-normal text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-teal-500 focus:bg-white focus:ring-4 focus:ring-teal-50; }
+  .field textarea { @apply resize-none; }
+}
