@@ -46,11 +46,11 @@ export default function Index() {
   return <div className="overflow-x-hidden bg-[#f8fafc] text-slate-900 selection:bg-teal-200">
     <Navbar />
     <main>
-      <section className="relative isolate min-h-[700px] overflow-hidden bg-slate-950 pt-24 lg:pt-28 text-white lg:min-h-[550px]">
+      <section className="relative isolate min-h-[400px] sm:min-h-[700px] lg:min-h-[550px] overflow-hidden bg-slate-950 pt-24 lg:pt-28 text-white">
         <motion.div initial={{ scale: 1.08 }} animate={{ scale: 1 }} transition={{ duration: 1.5 }} className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2200&q=90')] bg-cover bg-center opacity-75" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,19,27,.93)_2%,rgba(7,19,27,.70)_50%,rgba(7,19,27,.30)_100%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_82%_28%,rgba(20,184,166,.26),transparent_26%)]" />
-        <div className="relative mx-auto grid min-h-[450px] max-w-7xl items-start gap-12 px-5 pb-16 lg:min-h-[400px] lg:grid-cols-[1.2fr_.8fr] lg:px-8">
+        <div className="relative mx-auto grid max-w-7xl items-start gap-12 px-5 pb-16 lg:min-h-[400px] lg:grid-cols-[1.2fr_.8fr] lg:px-8">
           <motion.div {...fadeUp}>
             <div className="mb-7 flex w-fit items-center gap-2 rounded border border-white/20 bg-white/10 px-3 py-1.5 text-[10px] sm:px-4 sm:py-2 sm:text-xs font-semibold tracking-wide backdrop-blur-md"><Sparkles size={14} className="text-amber-300" /> TRUSTED ENGINEERING & CAD PARTNER</div>
             <h1 className="mt-8 font-display text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">Precision engineering for the <span className="text-teal-400">built environment.</span></h1>
