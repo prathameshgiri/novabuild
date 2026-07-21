@@ -29,12 +29,9 @@ const faqs = [
   { question: "Are your surveying and drafting services available as standalone options?", answer: "Absolutely. While we offer end-to-end design and build services, many of our clients hire us specifically for our precise civil engineering drafting or land surveying expertise." },
 ];
 
-const projects = [
-  { category: "Commercial", title: "Atrium Business Park", location: "Austin, TX", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85", large: true },
-  { category: "Infrastructure", title: "Harbor Link", location: "Melbourne, AU", image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=85", large: false },
-  { category: "Residential", title: "Cedar Residence", location: "Vancouver, CA", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85", large: false },
-  { category: "Survey", title: "Eastland Grid", location: "Phoenix, AZ", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=85", large: false },
-];
+import { ALL_PROJECTS } from "@/data/projects";
+
+const projects = ALL_PROJECTS.slice(0, 4);
 
 const fadeUp = { initial: { opacity: 0, y: 28 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true, amount: 0.2 }, transition: { duration: 0.65 } };
 

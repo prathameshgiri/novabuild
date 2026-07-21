@@ -34,8 +34,8 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-bold text-white">Explore</h3>
             <div className="mt-4 space-y-3 text-sm text-slate-500">
-              {["About", "Services", "Projects", "Contact"].map(x => (
-                <button key={x} onClick={() => navigateTo(x === "About" || x === "Services" ? `/${x.toLowerCase()}` : `/#${x.toLowerCase()}`)} className="block hover:text-teal-300">
+              {["About", "Services", "Projects", "Careers", "Blog", "Contact"].map(x => (
+                <button key={x} onClick={() => navigateTo(`/${x.toLowerCase()}`)} className="block hover:text-teal-300">
                   {x}
                 </button>
               ))}

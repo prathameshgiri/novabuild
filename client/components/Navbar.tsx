@@ -47,9 +47,9 @@ export function Navbar() {
   const navItems = [
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
-    { name: "Projects", path: "/#projects" },
-    { name: "Process", path: "/#process" },
-    { name: "Contact", path: "/#contact" }
+    { name: "Projects", path: "/projects" },
+    { name: "Careers", path: "/careers" },
+    { name: "Blog", path: "/blog" }
   ];
 
   return (
@@ -65,7 +65,7 @@ export function Navbar() {
                </button>
             ))}
           </nav>
-          <button onClick={() => navigateTo("/#contact")} className="hidden rounded-md bg-teal-600 px-4 py-2.5 text-xs font-semibold text-white shadow-lg shadow-teal-700/20 transition hover:-translate-y-0.5 hover:bg-teal-700 lg:inline-flex">Get Free Consultation <ArrowUpRight className="ml-2" size={16}/></button>
+          <button onClick={() => navigateTo("/contact")} className="hidden rounded-md bg-teal-600 px-4 py-2.5 text-xs font-semibold text-white shadow-lg shadow-teal-700/20 transition hover:-translate-y-0.5 hover:bg-teal-700 lg:inline-flex">Get Free Consultation <ArrowUpRight className="ml-2" size={16}/></button>
           <button className="lg:hidden" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation">{menuOpen ? <X /> : <Menu />}</button>
         </div>
         {menuOpen && (
@@ -86,7 +86,7 @@ export function Navbar() {
               ))}
               <div className="px-3 pb-2 pt-4">
                 <button 
-                  onClick={() => navigateTo("/#contact")} 
+                  onClick={() => navigateTo("/contact")} 
                   className="inline-flex rounded-lg bg-teal-600 px-5 py-2.5 text-xs font-bold text-white shadow-md hover:bg-teal-700"
                 >
                   Get Free Consultation
